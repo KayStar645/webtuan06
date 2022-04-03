@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+.gird {
+    width: 1500px;
+    max-width: 94%;
+    margin: auto;
+}
+
+                                /* Header */
+.header {
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    height: 60px;
+    box-shadow: 6px 6px 20px 1px #ccc;
+    padding: 0 40px;
+    font-size: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    letter-spacing: 6px;
+    z-index: 10;
+}
+
+.header .header__link {
+    text-decoration: none;
+    color: #000;
+}
+
+.header__item {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.header__link {
+    display: inline-block;
+    padding: 0 30px;
+    line-height: 40px;
+
+}
+
+.header__link:hover {
+    background-color: #ccc;
+}
+
+.header__mobile {
+    display: none;
+}
+
+/* Header Mobile menu */
+#header__mobile {
+    display: none;
+}
+
+                                    /* Main */
+.main {
+    margin-top: 60px;
+}
+
+.main_panel {
+    position: relative;
+    padding: 0 10px;
+}
+
+.main__panel-title {
+    color: #FFF;
+    font-size: 30px;
+    letter-spacing: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main__heading {
+    padding: 32px 16px;
+    border-bottom: 1px solid #e9e7e7;
+    margin-bottom: 30px;
+}
+
+
+    /* Danh sách hình ảnh */
+.main__list-imgs {
+    width: 100%;
+    height: 500px;
+}
+
+.main__list-img {
+    width: 25%;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.main__list-img img {
+    width: 94%;
+}
+
+.main__list-img-title {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    z-index: 5;
+    padding: 10px 20px;
+    top: 0;
+    left: 3%;
+    letter-spacing: 2px;
+}
+/* Thành viên */
+
+.main__content {
+    color: #333;
+    letter-spacing: 1px;
+    height: 700px;
+}
+
+.main__content-title {
+    text-align: justify;
+    padding: 0 10px;
+    line-height: 24px;
+}
+
+.main__content-mens {
+    margin-top: 50px;
+}
+
+.main__content-men {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.main__content-men img {
+    width: 94%;
+}
+
+.main__content-button {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+}
+
+.main__content-button:hover {
+    cursor: pointer;
+}
+
+.main__button {
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+.main__button:hover {
+    cursor: pointer;
+}
+
+    /* Form */
+.main__form-title {
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.main__form input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+/* Reponsive */
+/*Tablet*/
+/*PC*/
+@media (min-width: 1024px) {
+	#header .bars-btn {
+		display: none;
+	}
+}
+
+/* Table */
+@media (min-width: 740px) and (max-width: 1023px) {
+	.header {
+        display: block;
+        text-align: center;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .header__item {
+        margin: 0;
+        width: 100%;
+    }
+
+    .header__link {
+        display: block;
+        background-color: #faf5f5;
+        margin: 0;
+        height: 60px;
+        line-height: 60px;
+        width: 100%;
+        
+    }
+
+    #header__mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .main__list-imgs {
+        width: 100%;
+        height: 1050px;
+    }
+    
+    .main__list-img {
+        width: 50%;
+    }
+
+    /* Thành viên */
+    .main__content-men {
+        width: 50%;
+    }   
+
+    .main__form input {
+        width: 97%;
+    }
+
+    #header__mobile-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color:bisque;
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+	.header {
+        display: block;
+        text-align: center;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .header__item {
+        margin: 0;
+        width: 100%;
+    }
+
+    .header__link {
+        display: block;
+        background-color: #faf5f5;
+        margin: 0;
+        height: 60px;
+        line-height: 60px;
+        
+        
+    }
+
+    #header__mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .main__title {
+        display: none;
+    }
+
+    .main__list-imgs {
+        width: 100%;
+        height: 1050px;
+    }
+    
+    .main__list-img {
+        width: 100%;
+    }
+
+    /* Thành viên */
+    .main__content-men {
+        width: 100%;
+    }
+    
+
+    .main__form input {
+        width: 93%;
+    }
+}
